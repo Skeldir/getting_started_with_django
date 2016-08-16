@@ -1,0 +1,16 @@
+<table>
+<tbody>
+<thead>
+<tr>
+<th>pk</th>
+<th>attr</th>
+</tr>
+</thead>
+{% for row in model.objects.all %}
+<tr>
+<td>{% row.pk %}</td>
+<td>{% row.attr %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
